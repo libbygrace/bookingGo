@@ -7,7 +7,10 @@ class Search extends React.Component {
                 <h1>Where are you going ?</h1>
                 <div className="dropdown">
                     <label htmlFor="pickupLocation" className="pickup">Pick-up Location</label>
-                    <input className="textbox" name="pickupLocation"
+                    <input
+                        className="textbox"
+                        name="pickupLocation"
+                        placeholder="city, airport, station, region and district..."
                     />
                 </div>
             </div>
