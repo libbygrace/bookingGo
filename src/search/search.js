@@ -65,6 +65,7 @@ class Search extends React.Component {
                 <div className="dropdown">
                     <label htmlFor="pickupLocation" className="pickup">Pick-up Location</label>
                     <input
+                        autocomplete="off"
                         ref={ ( ref ) => this.selectedInput = ref }
                         className="textbox"
                         name="pickupLocation"
