@@ -10,6 +10,6 @@ export const placeTypeConversion = placeType => {
         case 'G':
             return 'Place';
         default:
-            return null;
+            return 'Default';
     }
 };
