@@ -20,7 +20,7 @@ class Search extends React.Component {
 
     // The following function is used to determine if the dropdown should be open or closed
     handlePageClick = e => {
-        if( this.selectedInput.contains( e.target ) ) {
+        if( this.dropdown.contains( e.target ) ) {
             // Clicked Inside
             this.setState({
                 toggleDropdown: true,
@@ -62,10 +62,10 @@ class Search extends React.Component {
         return (
             <div className="search">
                 <h1>Where are you going ?</h1>
-                <div className="dropdown">
+                <div className="dropdown" ref={ ( ref ) => this.dropdown = ref }>
                     <label htmlFor="pickupLocation" className="pickup">Pick-up Location</label>
                     <input
-                        autocomplete="off"
+                        autoComplete="off"
                         ref={ ( ref ) => this.selectedInput = ref }
                         className="textbox"
                         name="pickupLocation"
